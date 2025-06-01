@@ -10,7 +10,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{AE9007CD-CFE3-AB92-0947-9814A0CCC7FE}</ProjectGuid>
+    <ProjectGuid>{DC69AF5A-E7DB-B370-B918-FECB9EB3620E}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -1193,15 +1193,15 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Unity.XR.Interaction.Toolkit.Samples.StarterAssets.Editor.csproj">
-      <Project>{4F445026-FDAF-ECD7-5517-56F3D432A778}</Project>
+      <Project>{25C046A7-FF06-4FF9-AD85-782DAD7AB0DC}</Project>
       <Name>Unity.XR.Interaction.Toolkit.Samples.StarterAssets.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.XR.Interaction.Toolkit.Samples.StarterAssets.csproj">
-      <Project>{E995B03D-11A1-C7B3-4D37-BD78065AF0A6}</Project>
+      <Project>{B01822FE-4931-C320-7992-ECB95709515F}</Project>
       <Name>Unity.XR.Interaction.Toolkit.Samples.StarterAssets</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.XR.Interaction.Toolkit.Samples.DeviceSimulator.csproj">
-      <Project>{2F0644FD-95B6-E1D2-0A86-A5315FAD45CA}</Project>
+      <Project>{35D7B28B-9C38-C64B-26EF-DE6D19E286C4}</Project>
       <Name>Unity.XR.Interaction.Toolkit.Samples.DeviceSimulator</Name>
     </ProjectReference>
   </ItemGroup>
