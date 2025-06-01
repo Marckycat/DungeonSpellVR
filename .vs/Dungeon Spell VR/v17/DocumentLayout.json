@@ -1,0 +1,279 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Marckycat\\Dungeon Spell VR\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{AE9007CD-CFE3-AB92-0947-9814A0CCC7FE}|Assembly-CSharp.csproj|C:\\Users\\Marckycat\\Dungeon Spell VR\\assets\\scripts\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE9007CD-CFE3-AB92-0947-9814A0CCC7FE}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Marckycat\\Dungeon Spell VR\\Library\\PackageCache\\com.unity.ugui@1.0.0\\Runtime\\EventSystem\\EventSystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Library\\PackageCache\\com.unity.ugui@1.0.0\\Runtime\\EventSystem\\EventSystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE9007CD-CFE3-AB92-0947-9814A0CCC7FE}|Assembly-CSharp.csproj|C:\\Users\\Marckycat\\Dungeon Spell VR\\assets\\scripts\\activateteleportationray.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE9007CD-CFE3-AB92-0947-9814A0CCC7FE}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\activateteleportationray.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Marckycat\\Dungeon Spell VR\\Library\\PackageCache\\com.unity.ugui@1.0.0\\Runtime\\UI\\Core\\GraphicRaycaster.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Library\\PackageCache\\com.unity.ugui@1.0.0\\Runtime\\UI\\Core\\GraphicRaycaster.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Marckycat\\Dungeon Spell VR\\Assets\\GameStartMenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\GameStartMenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE9007CD-CFE3-AB92-0947-9814A0CCC7FE}|Assembly-CSharp.csproj|C:\\Users\\Marckycat\\Dungeon Spell VR\\assets\\scripts\\movementrecognizer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE9007CD-CFE3-AB92-0947-9814A0CCC7FE}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\movementrecognizer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE9007CD-CFE3-AB92-0947-9814A0CCC7FE}|Assembly-CSharp.csproj|C:\\Users\\Marckycat\\Dungeon Spell VR\\assets\\scripts\\objectspawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE9007CD-CFE3-AB92-0947-9814A0CCC7FE}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\objectspawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE9007CD-CFE3-AB92-0947-9814A0CCC7FE}|Assembly-CSharp.csproj|C:\\Users\\Marckycat\\Dungeon Spell VR\\assets\\scripts\\damageonhit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE9007CD-CFE3-AB92-0947-9814A0CCC7FE}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\damageonhit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE9007CD-CFE3-AB92-0947-9814A0CCC7FE}|Assembly-CSharp.csproj|C:\\Users\\Marckycat\\Dungeon Spell VR\\assets\\scripts\\playerheartvr.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE9007CD-CFE3-AB92-0947-9814A0CCC7FE}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playerheartvr.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE9007CD-CFE3-AB92-0947-9814A0CCC7FE}|Assembly-CSharp.csproj|C:\\Users\\Marckycat\\Dungeon Spell VR\\assets\\scripts\\enemie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE9007CD-CFE3-AB92-0947-9814A0CCC7FE}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE9007CD-CFE3-AB92-0947-9814A0CCC7FE}|Assembly-CSharp.csproj|C:\\Users\\Marckycat\\Dungeon Spell VR\\assets\\scripts\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE9007CD-CFE3-AB92-0947-9814A0CCC7FE}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE9007CD-CFE3-AB92-0947-9814A0CCC7FE}|Assembly-CSharp.csproj|C:\\Users\\Marckycat\\Dungeon Spell VR\\assets\\scripts\\healthbar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE9007CD-CFE3-AB92-0947-9814A0CCC7FE}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\healthbar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE9007CD-CFE3-AB92-0947-9814A0CCC7FE}|Assembly-CSharp.csproj|C:\\Users\\Marckycat\\Dungeon Spell VR\\assets\\scripts\\manabar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE9007CD-CFE3-AB92-0947-9814A0CCC7FE}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\manabar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE9007CD-CFE3-AB92-0947-9814A0CCC7FE}|Assembly-CSharp.csproj|C:\\Users\\Marckycat\\Dungeon Spell VR\\assets\\scripts\\idamage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE9007CD-CFE3-AB92-0947-9814A0CCC7FE}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\idamage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE9007CD-CFE3-AB92-0947-9814A0CCC7FE}|Assembly-CSharp.csproj|C:\\Users\\Marckycat\\Dungeon Spell VR\\assets\\scripts\\handspresence.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE9007CD-CFE3-AB92-0947-9814A0CCC7FE}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\handspresence.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE9007CD-CFE3-AB92-0947-9814A0CCC7FE}|Assembly-CSharp.csproj|C:\\Users\\Marckycat\\Dungeon Spell VR\\assets\\scripts\\animatehandoninput.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE9007CD-CFE3-AB92-0947-9814A0CCC7FE}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\animatehandoninput.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "EventSystem.cs",
+              "DocumentMoniker": "C:\\Users\\Marckycat\\Dungeon Spell VR\\Library\\PackageCache\\com.unity.ugui@1.0.0\\Runtime\\EventSystem\\EventSystem.cs",
+              "RelativeDocumentMoniker": "Library\\PackageCache\\com.unity.ugui@1.0.0\\Runtime\\EventSystem\\EventSystem.cs",
+              "ToolTip": "C:\\Users\\Marckycat\\Dungeon Spell VR\\Library\\PackageCache\\com.unity.ugui@1.0.0\\Runtime\\EventSystem\\EventSystem.cs",
+              "RelativeToolTip": "Library\\PackageCache\\com.unity.ugui@1.0.0\\Runtime\\EventSystem\\EventSystem.cs",
+              "ViewState": "AgIAAA4CAAAAAAAAAAAgwB0CAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-01T05:17:07.944Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "DamageOnHit.cs",
+              "DocumentMoniker": "C:\\Users\\Marckycat\\Dungeon Spell VR\\Assets\\Scripts\\DamageOnHit.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\DamageOnHit.cs",
+              "ToolTip": "C:\\Users\\Marckycat\\Dungeon Spell VR\\Assets\\Scripts\\DamageOnHit.cs",
+              "RelativeToolTip": "Assets\\Scripts\\DamageOnHit.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-22T19:21:10.408Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ObjectSpawner.cs",
+              "DocumentMoniker": "C:\\Users\\Marckycat\\Dungeon Spell VR\\Assets\\Scripts\\ObjectSpawner.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\ObjectSpawner.cs",
+              "ToolTip": "C:\\Users\\Marckycat\\Dungeon Spell VR\\Assets\\Scripts\\ObjectSpawner.cs",
+              "RelativeToolTip": "Assets\\Scripts\\ObjectSpawner.cs",
+              "ViewState": "AgIAAGEAAAAAAAAAAAAkwIgAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-08T02:12:07.265Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ActivateTeleportationRay.cs",
+              "DocumentMoniker": "C:\\Users\\Marckycat\\Dungeon Spell VR\\Assets\\Scripts\\ActivateTeleportationRay.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\ActivateTeleportationRay.cs",
+              "ToolTip": "C:\\Users\\Marckycat\\Dungeon Spell VR\\Assets\\Scripts\\ActivateTeleportationRay.cs",
+              "RelativeToolTip": "Assets\\Scripts\\ActivateTeleportationRay.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-24T18:07:01.18Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Menu.cs",
+              "DocumentMoniker": "C:\\Users\\Marckycat\\Dungeon Spell VR\\Assets\\Scripts\\Menu.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Menu.cs",
+              "ToolTip": "C:\\Users\\Marckycat\\Dungeon Spell VR\\Assets\\Scripts\\Menu.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Menu.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-01T03:14:19.229Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "MovementRecognizer.cs",
+              "DocumentMoniker": "C:\\Users\\Marckycat\\Dungeon Spell VR\\Assets\\Scripts\\MovementRecognizer.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\MovementRecognizer.cs",
+              "ToolTip": "C:\\Users\\Marckycat\\Dungeon Spell VR\\Assets\\Scripts\\MovementRecognizer.cs",
+              "RelativeToolTip": "Assets\\Scripts\\MovementRecognizer.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAqwCMAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-30T01:59:38.565Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "GameStartMenu.cs",
+              "DocumentMoniker": "C:\\Users\\Marckycat\\Dungeon Spell VR\\Assets\\GameStartMenu.cs",
+              "RelativeDocumentMoniker": "Assets\\GameStartMenu.cs",
+              "ToolTip": "C:\\Users\\Marckycat\\Dungeon Spell VR\\Assets\\GameStartMenu.cs",
+              "RelativeToolTip": "Assets\\GameStartMenu.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-01T03:13:02.138Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "GraphicRaycaster.cs",
+              "DocumentMoniker": "C:\\Users\\Marckycat\\Dungeon Spell VR\\Library\\PackageCache\\com.unity.ugui@1.0.0\\Runtime\\UI\\Core\\GraphicRaycaster.cs",
+              "RelativeDocumentMoniker": "Library\\PackageCache\\com.unity.ugui@1.0.0\\Runtime\\UI\\Core\\GraphicRaycaster.cs",
+              "ToolTip": "C:\\Users\\Marckycat\\Dungeon Spell VR\\Library\\PackageCache\\com.unity.ugui@1.0.0\\Runtime\\UI\\Core\\GraphicRaycaster.cs",
+              "RelativeToolTip": "Library\\PackageCache\\com.unity.ugui@1.0.0\\Runtime\\UI\\Core\\GraphicRaycaster.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-01T03:56:49.683Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "PlayerHeartVR.cs",
+              "DocumentMoniker": "C:\\Users\\Marckycat\\Dungeon Spell VR\\Assets\\Scripts\\PlayerHeartVR.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerHeartVR.cs",
+              "ToolTip": "C:\\Users\\Marckycat\\Dungeon Spell VR\\Assets\\Scripts\\PlayerHeartVR.cs",
+              "RelativeToolTip": "Assets\\Scripts\\PlayerHeartVR.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAA5wCoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-30T03:34:11.457Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Enemie.cs",
+              "DocumentMoniker": "C:\\Users\\Marckycat\\Dungeon Spell VR\\Assets\\Scripts\\Enemie.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Enemie.cs",
+              "ToolTip": "C:\\Users\\Marckycat\\Dungeon Spell VR\\Assets\\Scripts\\Enemie.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Enemie.cs",
+              "ViewState": "AgIAAIsAAAAAAAAAAAAkwKMAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-22T19:16:49.597Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "GameManager.cs",
+              "DocumentMoniker": "C:\\Users\\Marckycat\\Dungeon Spell VR\\Assets\\Scripts\\GameManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\GameManager.cs",
+              "ToolTip": "C:\\Users\\Marckycat\\Dungeon Spell VR\\Assets\\Scripts\\GameManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\GameManager.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAwBwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-30T22:05:01.608Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "HealthBar.cs",
+              "DocumentMoniker": "C:\\Users\\Marckycat\\Dungeon Spell VR\\Assets\\Scripts\\HealthBar.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\HealthBar.cs",
+              "ToolTip": "C:\\Users\\Marckycat\\Dungeon Spell VR\\Assets\\Scripts\\HealthBar.cs",
+              "RelativeToolTip": "Assets\\Scripts\\HealthBar.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-30T21:58:41.04Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ManaBar.cs",
+              "DocumentMoniker": "C:\\Users\\Marckycat\\Dungeon Spell VR\\Assets\\Scripts\\ManaBar.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\ManaBar.cs",
+              "ToolTip": "C:\\Users\\Marckycat\\Dungeon Spell VR\\Assets\\Scripts\\ManaBar.cs",
+              "RelativeToolTip": "Assets\\Scripts\\ManaBar.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-29T18:20:17.245Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "IDamage.cs",
+              "DocumentMoniker": "C:\\Users\\Marckycat\\Dungeon Spell VR\\Assets\\Scripts\\IDamage.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\IDamage.cs",
+              "ToolTip": "C:\\Users\\Marckycat\\Dungeon Spell VR\\Assets\\Scripts\\IDamage.cs",
+              "RelativeToolTip": "Assets\\Scripts\\IDamage.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-22T19:14:09.541Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "HandsPresence.cs",
+              "DocumentMoniker": "C:\\Users\\Marckycat\\Dungeon Spell VR\\Assets\\Scripts\\HandsPresence.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\HandsPresence.cs",
+              "ToolTip": "C:\\Users\\Marckycat\\Dungeon Spell VR\\Assets\\Scripts\\HandsPresence.cs",
+              "RelativeToolTip": "Assets\\Scripts\\HandsPresence.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-24T17:59:37.292Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "AnimateHandOnInput.cs",
+              "DocumentMoniker": "C:\\Users\\Marckycat\\Dungeon Spell VR\\Assets\\Scripts\\AnimateHandOnInput.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\AnimateHandOnInput.cs",
+              "ToolTip": "C:\\Users\\Marckycat\\Dungeon Spell VR\\Assets\\Scripts\\AnimateHandOnInput.cs",
+              "RelativeToolTip": "Assets\\Scripts\\AnimateHandOnInput.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-24T02:16:20.901Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
