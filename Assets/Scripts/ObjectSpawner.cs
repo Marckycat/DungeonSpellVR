@@ -21,6 +21,7 @@ public class ObjectSpawner : MonoBehaviour
 
     public ManaSystem manaSystem;
     public float manaCostPerSpell = 20f; //Costo de cada invocacion
+    public float launchForce = 5f;
 
     private void Start()
     {
@@ -101,39 +102,60 @@ public class ObjectSpawner : MonoBehaviour
         }
     }
 
-    public void LaunchCurrentObject(float force)
+    public void LaunchCurrentObject(float damage)
     {
-        if (currentObject != null)
+        if (currentObject == null) return;
+
+        currentObject.transform.parent = null;
+
+        Rigidbody rb = currentObject.GetComponentInChildren<Rigidbody>();
+        if (rb != null)
         {
-            Rigidbody rb = currentObject.GetComponentInChildren<Rigidbody>(); 
-            //var rb = currentObject.GetComponent<Rigidbody>();
-            if (rb != null)
-            {
-                currentObject.transform.SetParent(null); // Liberarlo de la mano
-                rb.isKinematic = false;
-                rb.velocity = Vector3.zero;
-                rb.angularVelocity = Vector3.zero;
-
-                //Direccion con Raycast desde movementSource
-                Vector3 launchDirection;
-                Ray ray = new Ray(movementSource.position, movementSource.forward);
-                RaycastHit hit;
-
-                if(Physics.Raycast(ray, out hit, 100f))
-                {
-                    launchDirection = (hit.point - movementSource.transform.position).normalized;
-                }
-                else
-                {
-                    launchDirection = movementSource.forward;
-                }
-                rb.AddForce(movementSource.forward * force, ForceMode.Impulse);
-
-                // Programar devolución al pool tras un tiempo
-                StartCoroutine(DeactivateAfterTime(currentObject, 1.5f));
-                currentObject = null;
-            }
+            rb.isKinematic = false;
+            //rb.velocity = Vector3.zero;
+            rb.useGravity = false;
+            rb.AddForce(movementSource.forward * launchForce, ForceMode.Impulse);
         }
+
+        DamageOnHit damageScript = currentObject.GetComponent<DamageOnHit>();
+        if (damageScript != null)
+        {
+            damageScript.SetDamageMultiplier(damage);
+        }
+
+        currentObject = null;
+        
+        //if (currentObject != null)
+        //{
+        //    Rigidbody rb = currentObject.GetComponentInChildren<Rigidbody>(); 
+        //    //var rb = currentObject.GetComponent<Rigidbody>();
+        //    if (rb != null)
+        //    {
+        //        currentObject.transform.SetParent(null); // Liberarlo de la mano
+        //        rb.isKinematic = false;
+        //        rb.velocity = Vector3.zero;
+        //        rb.angularVelocity = Vector3.zero;
+
+        //        //Direccion con Raycast desde movementSource
+        //        Vector3 launchDirection;
+        //        Ray ray = new Ray(movementSource.position, movementSource.forward);
+        //        RaycastHit hit;
+
+        //        if(Physics.Raycast(ray, out hit, 100f))
+        //        {
+        //            launchDirection = (hit.point - movementSource.transform.position).normalized;
+        //        }
+        //        else
+        //        {
+        //            launchDirection = movementSource.forward;
+        //        }
+        //        rb.AddForce(movementSource.forward * force, ForceMode.Impulse);
+
+        //        // Programar devolución al pool tras un tiempo
+        //        StartCoroutine(DeactivateAfterTime(currentObject, 1.5f));
+        //        currentObject = null;
+        //    }
+        //}
     }
     private IEnumerator DeactivateAfterTime(GameObject obj, float time)
     {

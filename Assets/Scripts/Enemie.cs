@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
-public class Enemie : MonoBehaviour, IDamage
+public class Enemie : MonoBehaviour, IDamage, IStatusEffect
 {
     public Transform jugadorVR;
     public PlayerHeartVR healthPlayer;
@@ -16,8 +16,31 @@ public class Enemie : MonoBehaviour, IDamage
     public float timeBetweenAttacks; // Tiempo entre ataques al jugador
     private float nextAttackTime; // Controla el tiempo para el siguiente ataque
 
+    private bool isStunned = false;
+    //private bool isSlowed = false;
+    private float originalSpeed;
+    public float movementSpeed = 5f;
+
+    private Rigidbody rb;
+
     private GameManager gameManager;
     private NavMeshAgent agente;
+
+    private Coroutine stunCoroutine;
+    private Coroutine slowCoroutine;
+
+
+    void Awake()
+    {
+        agente = GetComponent<NavMeshAgent>(); // Descomenta si usas NavMeshAgent
+        rb = GetComponent<Rigidbody>();
+
+        originalSpeed = movementSpeed;
+        if (agente != null)
+        {
+            agente.speed = originalSpeed;
+        }
+    }
 
     void Start()
     {
@@ -33,13 +56,11 @@ public class Enemie : MonoBehaviour, IDamage
                 healthPlayer = jugadorObjeto.GetComponent<PlayerHeartVR>();
                 if(healthPlayer == null)
                 {
-                    Debug.LogError("No se encontró el componente PlayerHeartVR en el objeto del jugador. Asegúrate de que el jugador tenga este componente.");
                     enabled = false; // Deshabilita el script si no hay PlayerHeartVR
                 }
             }
             else
             {
-                Debug.LogError("No se encontró el objeto del jugador. Asegúrate de que tenga el Tag 'Player' o asígnalo manualmente.");
                 enabled = false; // Deshabilita el script si no hay jugador
             }
         }
@@ -53,7 +74,6 @@ public class Enemie : MonoBehaviour, IDamage
                 healthPlayer = jugadorVR.GetComponentInParent<PlayerHeartVR>();
                 if (healthPlayer == null)
                 {
-                    Debug.LogError("No se encontró el componente PlayerHeartVR en el objeto del jugador. Asegúrate de que el jugador tenga este componente.");
                     enabled = false; // Deshabilita el script si no hay PlayerHeartVR
                 }
             }
@@ -138,7 +158,11 @@ public class Enemie : MonoBehaviour, IDamage
 
     public void TakeDamage(float amount)
     {
-        health -= amount;
+        if (!isStunned)
+        {
+            
+           health -= amount;
+        }
         Debug.Log($"{gameObject.name} recibio {amount} de daño. Vida restante: {health}");
         if (health <= 0)
         {
@@ -163,6 +187,94 @@ public class Enemie : MonoBehaviour, IDamage
             Debug.LogWarning("Intento de notificar muerte de enemigo, pero no se encontró GameManager.");
         }
         Destroy(gameObject);
+    }
+
+    public void ApplyFire(float tickDamage, float duration)
+    {
+        StartCoroutine(BurnOverTime(tickDamage, duration));
+    }
+
+    public void ApplySlow(float slowMultiplier, float duration)
+    {
+        if (slowCoroutine != null)
+        {
+            StopCoroutine(slowCoroutine); // Detiene la corutina de ralentización anterior si hay una.
+        }
+        float newSpeed = movementSpeed * slowMultiplier;
+        slowCoroutine = StartCoroutine(SlowRoutine(newSpeed, duration));
+    }
+
+    public void ApplyStun(float duration)
+    {
+        if (stunCoroutine != null)
+        {
+            StopCoroutine(stunCoroutine); // Detiene la corutina de aturdimiento anterior.
+        }
+        stunCoroutine = StartCoroutine(Stun(duration));
+    }
+
+    public void ApplyPush(Vector3 force)
+    {
+        if (rb != null)
+            rb.AddForce(force, ForceMode.Impulse);
+    }
+
+    private IEnumerator BurnOverTime(float tickDamage, float duration)
+    {
+        float elapsed = 0f;
+        while (elapsed < duration)
+        {
+            TakeDamage(tickDamage);
+            elapsed += 1f;
+            yield return new WaitForSeconds(1f);
+        }
+    }
+
+    private IEnumerator SlowRoutine(float slowedSpeed, float duration)
+    {
+        originalSpeed = slowedSpeed;
+        if (agente != null && !isStunned) // Solo cambia la velocidad del NavMeshAgent si no está aturdido
+        {
+            agente.speed = originalSpeed;
+        }
+
+        yield return new WaitForSeconds(duration);
+
+        originalSpeed = movementSpeed;
+        if (agente != null && !isStunned)
+        {
+            agente.speed = movementSpeed;
+        }
+        slowCoroutine = null;
+    }
+
+    private IEnumerator Stun(float duration = 20f)
+    {
+        Debug.Log($"{gameObject.name} ATURDIDO por {duration}s.");
+        isStunned = true;
+
+        if (agente != null)
+        {
+            // Guarda la velocidad que tenía antes de ser aturdido (podría estar ralentizado)
+            // y detiene el NavMeshAgent.
+            // currentSpeed ya debería reflejar la velocidad correcta (base o ralentizada).
+            agente.speed = 0; // O agent.isStopped = true; (depende de cómo gestiones el reinicio)
+            agente.isStopped = true;
+        }
+        // Si usas Rigidbody para movimiento, puedes poner rb.isKinematic = true; para detenerlo
+        // y luego rb.isKinematic = false; cuando termine el aturdimiento.
+        // O simplemente no aplicar movimiento en Update() si isStunned es true.
+
+        yield return new WaitForSeconds(duration);
+
+        isStunned = false;
+        if (agente != null)
+        {
+            agente.isStopped = false;
+            agente.speed = originalSpeed; // Restaura a la velocidad que debería tener (base o ralentizada)
+        }
+        Debug.Log($"{gameObject.name} ya no está aturdido. Movimiento restaurado.");
+        stunCoroutine = null;
     }
 
     // Opcional: Dibuja gizmos en el editor para visualizar las distancias

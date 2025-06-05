@@ -26,14 +26,16 @@ public class MovementRecognizer : MonoBehaviour
     public float recognitionThreshold = 0.9f;
 
     //// --- Variables para el disparo cargado ---
-    //private bool isChargingShot = false;
-    //private float chargeStartTime;
-    //public float minChargeTimeToLaunch = 0.1f; // Tiempo mínimo para que se considere un lanzamiento (evitar toques accidentales)
-    //public float minChargeTimeForBonus = 0.25f; // Tiempo mínimo de carga para empezar a obtener bonus de daño
-    //public float maxChargeTime = 2.0f;         // Tiempo para alcanzar el multiplicador máximo
-    //public float minDamageMultiplier = 1.0f;   // Multiplicador con carga mínima (o sin carga bonus)
-    //public float maxDamageMultiplier = 3.0f;   // Multiplicador con carga máxima
+    private bool isChargingShot = false;
+    private float chargeStartTime = 0f;
+    public float minChargeTimeToLunch = 0.1f;
+    public float maxChargeTime = 2.0f;
+    public float minDamageMultiplier = 1.0f;
+    public float maxDamageMultiplier = 3.0f;
     //// --- Fin variables para el disparo cargado ---
+
+    public ManaSystem manaSystem;
+    public float manaCostPerSecondCharge = 10f;
 
     [System.Serializable]
     public class UnityStringEvent : UnityEvent<string> { }
@@ -77,19 +79,20 @@ public class MovementRecognizer : MonoBehaviour
         {
             UpdateMovement();
         }
-        //Lanzar objeto al presionar GRAB
-        if (isGrabbed && objectSpawner != null)
+        //Inicia carga si se presiona el boton y no se estaba cargando
+        if(isGrabbed && !isChargingShot && objectSpawner != null)
         {
-            LaunchMovement();
+            StartCharge();
         }
-        //--Logica de disparo cargado--
-        //if(isGrabbed && !isChargingShot && objectSpawner != null && objectSpawner.LaunchCurrentObject())
+        //Suelta el boton => lanza hechizo con daño cargado
+        else if(!isGrabbed && isChargingShot)
+        {
+            ReleaseChargeAndLaunch();
+        }
+        //Lanzar objeto al presionar GRAB
+        //if (isGrabbed && objectSpawner != null)
         //{
-        //    StartCharge();
-        //}
-        //else if (!isGrabbed && isChargingShot)
-        //{
-        //    ReleaseChargeAndLaunch();
+        //    LaunchMovement();
         //}
     }
 
@@ -154,8 +157,43 @@ public class MovementRecognizer : MonoBehaviour
             
     }
 
-    void LaunchMovement()
+    void StartCharge()
     {
-        objectSpawner.LaunchCurrentObject(10f);
+        isChargingShot = true;
+        chargeStartTime = Time.time;
     }
+
+    void ReleaseChargeAndLaunch()
+    {
+        isChargingShot = false;
+        float chargeDuration = Time.time - chargeStartTime;
+        if(chargeDuration < minChargeTimeToLunch)
+        {
+            Debug.Log("Carga muy corta, no se lanza el hechizo.");
+            return;
+        }
+
+        //Calcular multiplicador de daño
+        //float t = Mathf.Clamp01(chargeDuration / maxChargeTime);
+        float damageMultiplier = Mathf.Lerp(minDamageMultiplier, maxDamageMultiplier, chargeStartTime / maxChargeTime);
+        
+
+        //Calcular dcoste de mana
+        float manaCost = chargeDuration * manaCostPerSecondCharge;
+
+        //¿Hay suficiente maná?
+        if(manaSystem != null && !manaSystem.UseMana(manaCost))
+        {
+            Debug.Log("Mana insuficiente para lanzar el hechizo.");
+            return;
+        }
+
+        //Lanzar hechizo
+        objectSpawner.LaunchCurrentObject(damageMultiplier);
+    }
+
+    //void LaunchMovement()
+    //{
+    //    objectSpawner.LaunchCurrentObject(10f);
+    //}
 }
