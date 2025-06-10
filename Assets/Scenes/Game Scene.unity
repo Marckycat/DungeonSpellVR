@@ -361,6 +361,7 @@ GameObject:
   - component: {fileID: 68394219}
   - component: {fileID: 68394220}
   - component: {fileID: 68394221}
+  - component: {fileID: 68394222}
   m_Layer: 0
   m_Name: VR Origin
   m_TagString: Player
@@ -686,6 +687,26 @@ MonoBehaviour:
   maxHealth: 100
   currentHealth: 100
   healthBar: {fileID: 1328090458}
+--- !u!114 &68394222
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 68394209}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9fa1e678cee90db418e399a81f08ec93, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  characterController: {fileID: 68394215}
+  lefthHandController: {fileID: 1565958512}
+  rightHandController: {fileID: 852458098}
+  mainCamera: {fileID: 963194227}
+  speed: 50
+  velocityThreshold: 2.5
+  grabButton: 3
+  activationThreshold: 0.1
 --- !u!1 &82540384 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1895090048167480894, guid: 5e6ed3b311c752449b406e1dc88980d6, type: 3}
@@ -6687,7 +6708,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 306432832}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: caff514de9b15ad48ab85dcff5508221, type: 3}
   m_Name: 
@@ -6970,7 +6991,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 471a925b676305c4d8b21b696a191a81, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyPrefab: {fileID: 0}
+  enemyPrefab: {fileID: 8146088332469160748, guid: 9c091cfbf53503b489af4d0677f8d00a, type: 3}
   spawnPoints:
   - {fileID: 508634045}
   - {fileID: 1668323329}
@@ -6980,7 +7001,7 @@ MonoBehaviour:
   - {fileID: 1255075198}
   - {fileID: 1265313128}
   - {fileID: 1418267973}
-  timeBetweenWaves: 5
+  timeBetweenWaves: 1
   winScene: Win
   currentWaveIndex: 0
 --- !u!1 &397967095
@@ -17801,8 +17822,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxMana: 200
   currentMana: 200
-  manaRegenRate: 3.5
-  regenDelay: 5
+  manaRegenRate: 1.5
+  regenDelay: 2
   manaBar: {fileID: 1380610484}
 --- !u!4 &834585122
 Transform:

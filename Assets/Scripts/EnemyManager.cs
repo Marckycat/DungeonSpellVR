@@ -18,7 +18,7 @@ public class EnemyManager : MonoBehaviour
     private int currentWaveIndex = 0;
     private int enemiesRemaining;
 
-    private int[] enemiesPerWave = new int[] { 2, 4, 8 };
+    private int[] enemiesPerWave = new int[] { 2, 3, 4 };
 
     void Start()
     {
@@ -30,6 +30,7 @@ public class EnemyManager : MonoBehaviour
         if(currentWaveIndex >= enemiesPerWave.Length)
         {
             Debug.Log("All waves completed!");
+            SceneManager.LoadScene(winScene);
             yield break;
         }
         Debug.Log($"Iniciando Oleada {currentWaveIndex + 1}");

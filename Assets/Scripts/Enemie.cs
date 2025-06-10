@@ -201,7 +201,7 @@ public class Enemie : MonoBehaviour, IDamage, IStatusEffect
         {
             StopCoroutine(slowCoroutine); // Detiene la corutina de ralentización anterior si hay una.
         }
-        float newSpeed = movementSpeed * slowMultiplier;
+        float newSpeed = movementSpeed - slowMultiplier;
         slowCoroutine = StartCoroutine(SlowRoutine(newSpeed, duration));
     }
 
