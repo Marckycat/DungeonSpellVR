@@ -12,6 +12,8 @@ public class GameManager : MonoBehaviour
 
     private int numberOfEnemiesLifes;
 
+    public EnemyManager waveManager;
+
     void Start()
     {
         numberOfEnemiesLifes = enemies.Count;

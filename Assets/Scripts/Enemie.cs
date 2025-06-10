@@ -7,6 +7,7 @@ public class Enemie : MonoBehaviour, IDamage, IStatusEffect
 {
     public Transform jugadorVR;
     public PlayerHeartVR healthPlayer;
+    public EnemyManager waveManager;
 
     public float health = 100f;
     public float distanciaDePersecucion;
@@ -178,9 +179,9 @@ public class Enemie : MonoBehaviour, IDamage, IStatusEffect
         if (col != null) col.enabled = false; //Desactiva el collider
 
         // Notificar al GameManager
-        if (gameManager != null)
+        if (waveManager != null)
         {
-            gameManager.EnemigoEliminado();
+            waveManager.OnEnemyDefeated();
         }
         else
         {
