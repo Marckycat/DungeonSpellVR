@@ -67,7 +67,6 @@
     <Compile Include="Assets\Scripts\MovementRecognizer.cs" />
     <Compile Include="Assets\PDollar\Scripts\Geometry.cs" />
     <Compile Include="Assets\Scripts\HealthBar.cs" />
-    <Compile Include="Assets\Scripts\SprintVR.cs" />
     <Compile Include="Assets\Scripts\PlayerHeartVR.cs" />
     <Compile Include="Assets\Scripts\EnemyManager.cs" />
     <Compile Include="Assets\Scripts\HandsPresence.cs" />
@@ -79,7 +78,6 @@
     <Compile Include="Assets\Scripts\ManaBar.cs" />
     <Compile Include="Assets\Scripts\ActivateTeleportationRay.cs" />
     <Compile Include="Assets\Scripts\DamageOnHit.cs" />
-    <Compile Include="Assets\Scripts\GameManager.cs" />
     <Compile Include="Assets\Scripts\Menu.cs" />
     <Compile Include="Assets\PDollar\Scripts\Demo.cs" />
     <Compile Include="Assets\Scripts\ObjectSpawner.cs" />

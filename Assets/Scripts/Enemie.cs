@@ -24,7 +24,6 @@ public class Enemie : MonoBehaviour, IDamage, IStatusEffect
 
     private Rigidbody rb;
 
-    private GameManager gameManager;
     private NavMeshAgent agente;
 
     private Coroutine stunCoroutine;
@@ -85,12 +84,6 @@ public class Enemie : MonoBehaviour, IDamage, IStatusEffect
             agente.stoppingDistance = distanciaDeAtaque;
         }
 
-        // Encontrar el GameManager en la escena
-        gameManager = FindObjectOfType<GameManager>();
-        if (gameManager == null)
-        {
-            Debug.LogError("GameManager no encontrado en la escena.");
-        }
     }
 
     void Update()

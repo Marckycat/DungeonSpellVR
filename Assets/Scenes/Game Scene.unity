@@ -361,7 +361,6 @@ GameObject:
   - component: {fileID: 68394219}
   - component: {fileID: 68394220}
   - component: {fileID: 68394221}
-  - component: {fileID: 68394222}
   m_Layer: 0
   m_Name: VR Origin
   m_TagString: Player
@@ -395,7 +394,7 @@ Transform:
   m_GameObject: {fileID: 68394209}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 1.086, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -687,26 +686,6 @@ MonoBehaviour:
   maxHealth: 100
   currentHealth: 100
   healthBar: {fileID: 1328090458}
---- !u!114 &68394222
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 68394209}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9fa1e678cee90db418e399a81f08ec93, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  characterController: {fileID: 68394215}
-  lefthHandController: {fileID: 1565958512}
-  rightHandController: {fileID: 852458098}
-  mainCamera: {fileID: 963194227}
-  speed: 50
-  velocityThreshold: 2.5
-  grabButton: 3
-  activationThreshold: 0.1
 --- !u!1 &82540384 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1895090048167480894, guid: 5e6ed3b311c752449b406e1dc88980d6, type: 3}
@@ -6287,7 +6266,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &306432833
 Transform:
   m_ObjectHideFlags: 0
@@ -6936,7 +6915,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 312295071}
-  - component: {fileID: 312295072}
   - component: {fileID: 312295073}
   m_Layer: 0
   m_Name: GameManager
@@ -6960,25 +6938,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &312295072
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 312295070}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ed2c11d1e62fa4c42bcfa50d3d6c38b9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  enemies:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  winScene: Win
-  waveManager: {fileID: 0}
 --- !u!114 &312295073
 MonoBehaviour:
   m_ObjectHideFlags: 0

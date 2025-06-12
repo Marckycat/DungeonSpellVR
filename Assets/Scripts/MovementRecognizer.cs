@@ -22,7 +22,6 @@ public class MovementRecognizer : MonoBehaviour
     public GameObject cubePrefab;
     public bool creationMode = true;
     public string newGestureName;
-
     public float recognitionThreshold = 0.9f;
 
     //// --- Variables para el disparo cargado ---
