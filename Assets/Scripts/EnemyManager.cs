@@ -18,7 +18,7 @@ public class EnemyManager : MonoBehaviour
     private int currentWaveIndex = 0;
     private int enemiesRemaining;
 
-    private int[] enemiesPerWave = new int[] { 4, 5, 7 };
+    private int[] enemiesPerWave = new int[] { 2, 3, 4 };
 
     void Start()
     {
